@@ -1,0 +1,19 @@
+GET /prize/sync/186076?n=52duobao_android&v=1.2.6&mac=02:00:00:00:00:00&sim=true&nettype=wifi&device_id=354732086168093&device_model=SM-G9550&os_version=7.0&platform=android&series=android1x&app_version=26&android_id=21338b998d93c9d6&s=fzvu&ns=fzvu&app_language=zh&user_type=old&t=1502262430236&sn=58D4E93 HTTP/1.1
+package: android1x
+app-version: 26
+platform: android
+version: 1.2.6
+v: 1.2.6
+mac: 02:00:00:00:00:00
+sim: true
+nettype: wifi
+device-id: 354732086168093
+device-model: SM-G9550
+os-version: 7.0
+android-id: 21338b998d93c9d6
+s: fzvu
+cookie: session=.eJxFkFGLglAQhf_KMs8FV71WBj2UWhTMlRZFrssSZTf1qhVmWxr991V3230YGIY5Z843D9gcCnGJYVwWV9GDTbKH8QPedjAGrNd3Zs0zx7fvXL6n6L9LLm2d5fOEuek9WKxp4K4kykhBN1UxXyvc5c1uIHGxioMFv3G51rjMcqwjHfNlFbh2U17NZEi4XFZc9QjKkAZWSrFmMVqRiqpXBfkqcRY2ZRbLmj5F6WnMCinzsZmtMsflOvODhOeoOT5O4NmD60UUXX5QRsqQEkrgZ5gcD6eWKoy3x6PIOsASxh-g7lQKn400LMS2FJsyycU_vpzeWUVujklurGp6eaqZdapxOunO7cVXEorXwzq_2VSZ6Qod9U1bU_uUmrP-1DSM_ty2CLHUgTEyh929VvQK2YNzti0PpyL_M_pNsPWNGp7tfiGi5FK2eOcWzxiMNEJ1Q4Hn8xsVZIrI.DGw_KQ.iaUhBKQnDDCfQWUKhaCkan7CtFg;
+Host: api.jianfuaosi.com
+Connection: Keep-Alive
+User-Agent: ANDROIDAPP,PENGCHENG,f2f3a7e4-2176-4fbb-85df-3a65acac9781,7.0,24,samsung SM-G9550,1080x2008
+
