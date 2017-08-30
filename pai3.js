@@ -32,14 +32,34 @@ var getOpt = function (type) {
     return opt;
 };
 
+var bidNum = 0;
+
 var getPrize = function () {
-    // console.log(opt);
     var opt = getOpt('get');
+    //console.log(opt);
     request.post(opt, function (error, response, content) {
         if (!error && (response.statusCode == 200)) {
+            content = JSON.parse(content);
+            //console.log(content);
 
+            var products = content.products,
+                price = products.price,
+                bidPrice = products.bidPrice,
+                leftSeconds = products.leftSeconds,
+                memberId = products.memberId,
+                myId = "";
+
+            console.log("lastSeconds: " + leftSeconds + "  bidPrice: " + bidPrice + "  price: " + price);
+
+            if(leftSeconds < 8) {
+                if(price * 1 < bidPrice) {
+                    console.log("未到出价时间");
+                    return;
+                }
+
+                console.log("bidNumber: " +  bidNum++);
+            }
         }
-        console.log(content);
     });
 };
 
