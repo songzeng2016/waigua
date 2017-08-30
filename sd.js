@@ -1,16 +1,18 @@
 var request = require('request');
 
-var productId = '507';
-var myId = '168126725358';
+// console.log(process);
+
+var productId = '222';
+var myId = '168126725548';
 var timeOut = '';
 
 var url = 'http://bid.szmumi.com:8081';
 var getApi = '/api/activity_bid/getProductsDetails?productId=' + productId;
 var orderApi = '/api/order_bid/addOrder?amount=1&productId=' + productId;
 var data = {
-    'uniqueCode': 'ODY2NDEyMDM0MzIyMDI0X2JmYmQ0OGJmLTE0MzAtNGRiNS04MDJlLWM2YTg3YTBlYzc3M18xNTAzODQ0NzA5MzQ5',
+    'uniqueCode': 'ODY0NDEzMDMxMTEyNjU5X2EwMmE1YWNlLTk2NzUtNDBiYS1hY2EyLWM2NjBhMTQwYzAzZF8xNTA0MDIwNDcwMTMw',
     'X-Requested-With': 'XMLHttpRequest',
-    'channelToken': '63D5BDA9DA4949329B3B576667EE48AA',
+    'channelToken': '413851072E4044519F28572CDF787FEC',
     'Content-Type': 'application/x-www-form-urlencoded',
     'User-Agent': 'Mozilla/5.0 (Linux; Android 7.1.2; MI 5X Build/N2G47H; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 Mobile Safari/537.36 Html5Plus/1.0',
     'Accept': 'application/json',
@@ -64,15 +66,20 @@ var getPrize = function () {
                 }
                 timeOut = Math.round(Date.now() / 1000);
 
-                if(bidPrice * 100 < price * 5 || memberId == myId) {
-                    console.log("未到出价时间");
+                if(memberId == myId) {
+                    // console.log("未到出价时间");
                     return false;
                 }
 
-                if(bidNum + bidPrice > price) {
+                /*if(bidPrice * 100 < price * 5 || memberId == myId) {
+                    console.log("未到出价时间");
+                    return false;
+                }*/
+
+                /*if(bidNum + bidPrice > price) {
                     process.exit();
                     return false;
-                }
+                }*/
 
 
                 var opt = getOpt('order');
